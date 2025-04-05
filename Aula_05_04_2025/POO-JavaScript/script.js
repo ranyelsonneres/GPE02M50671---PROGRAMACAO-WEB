@@ -18,11 +18,6 @@ class GerenciadorPessoas {
 
 
     adicionar(nome, idade) {
-        if (nome === "" || idade === "") {
-            alert("Preencha todos os campos!");
-            return;
-        }
-
         const novaPessoa = new Pessoa(nome, idade);
         this.pessoas.push(novaPessoa);
         this.atualizarDOM();
