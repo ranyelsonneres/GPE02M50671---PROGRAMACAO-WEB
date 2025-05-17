@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Envio de Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Deixe seu Feedback sobre o Curso</h1>
+    <form action="/feedbacks/enviar" method="POST">
+        <label for="nome">Seu Nome:</label><br>
+        <input type="text" name="nome" id="nome" required><br><br>
+
+        <label for="comentario">Comentário:</label><br>
+        <textarea name="comentario" id="comentario" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <a href="/feedbacks/lista">Ver todos os feedbacks</a>
+</body>
+</html>
